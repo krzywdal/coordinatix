@@ -12,7 +12,10 @@ The configuration can be set in `application.properties` config file.
 
 ### Dependencies
 Application uses Redis as an external environment to synchronize on.
-This lets us scale the application.
+This allows us to scale the application.
+
+If you do not have Redis you can install it using docker:
+`docker pull redis`
 
 ### HowTo
 Here are the instructions on how you can use it
@@ -27,4 +30,4 @@ Now we can start using the resource.
 * To release the permission for the resource id 'myresourceid' and permitId obtained previously: curl -X POST "http://localhost:8080/release/myresourceid/ea10fa72056382664bca5fe45f03823d"
 
 * In case when the permission cannot be granted you will see the response of this kind
-{"permitId":null,"resourceId":"myresourceid","maxAllowedPermits":2,"currentPermits":0,"expirationMs":5000,"granted":false}
+`{"permitId":null,"resourceId":"myresourceid","maxAllowedPermits":2,"currentPermits":0,"expirationMs":5000,"granted":false}`
