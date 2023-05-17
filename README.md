@@ -22,7 +22,10 @@ docker pull redis
 ### HowTo
 Here are the instructions on how you can use it
 
-* To ask for a permission to the resource with id 'myresourceid': curl -X GET "http://localhost:8080/permission/myresourceid"
+* To ask for a permission to the resource with id 'myresourceid': 
+```
+curl -X GET "http://localhost:8080/permission/myresourceid"
+```
 
 The following response should be returned of the permission is granted:
 ```
