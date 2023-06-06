@@ -27,7 +27,7 @@ Here are the instructions on how you can use it
 curl -X GET "http://localhost:8080/permission/myresourceid"
 ```
 
-The following response should be returned of the permission is granted:
+The following response should be returned if the permission is granted:
 ```
 {"permitId":"ea10fa72056382664bca5fe45f03823d","resourceId":"myresourceid","maxAllowedPermits":2,"currentPermits":0,"expirationMs":5000,"granted":true}
 ```
