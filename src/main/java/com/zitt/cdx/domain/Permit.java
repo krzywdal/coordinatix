@@ -14,7 +14,7 @@ public class Permit {
     private boolean isGranted;
 
     /**
-     *
+     * Default constructor
      */
     public Permit() {
         isGranted = false;

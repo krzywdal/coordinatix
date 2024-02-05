@@ -1,7 +1,6 @@
 package com.zitt.cdx.domain;
 
 /**
- *
  * @param <T>
  */
 public abstract class BuilderSupport<T> {
