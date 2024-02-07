@@ -22,6 +22,10 @@ dependencies {
 	implementation group: 'org.redisson', name: 'redisson', version: '3.17.1'
 }
 
+bootJar {
+	archiveFileName = 'coordinatorapp.jar' // Set the desired name for the JAR file
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
